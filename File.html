@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Peppis's Pizza Parlour</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        
+        .card {
+            background-color: rgb(136, 215, 239);
+            padding: 30px;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+        }
+
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .form-section {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin: 20px 0;
+        }
+
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 200px;
+            text-align: left;
+        }
+
+        table td {
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: medium;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .button-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input[type="submit"] {
+            margin: 0 10px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #98bc2b;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #b0b300;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Peppis's Pizza Parlour</h2>
+        <form action="/action_page.php">
+            <div class="form-section">
+                <table>
+                    <tr>
+                        <td>
+                            <h1>Choose Crust Type</h1>
+                            <input type="radio" id="thin" name="crust" value="Thin">
+                            <label for="thin">Thin</label><br>
+                            <input type="radio" id="thick" name="crust" value="Thick">
+                            <label for="thick">Thick</label><br>
+                            <input type="radio" id="pan" name="crust" value="Pan">
+                            <label for="pan">Pan</label><br>
+                        </td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td>
+                            <h1>Select Size</h1>
+                            <input type="radio" id="small" name="size" value="Small">
+                            <label for="small">Small</label><br>
+                            <input type="radio" id="medium" name="size" value="Medium">
+                            <label for="medium">Medium</label><br>
+                            <input type="radio" id="large" name="size" value="Large">
+                            <label for="large">Large</label><br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Toppings Section -->
+            <div class="form-section">
+                <table style="width: 70%;">
+                    <tr>
+                        <td colspan="2">
+                            <h1>Select Toppings</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="ham" name="toppings" value="Ham">
+                            <label for="ham">Ham</label><br>
+                            <input type="checkbox" id="beef" name="toppings" value="Beef">
+                            <label for="beef">Beef</label><br>
+                            <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
+                            <label for="pepperoni">Pepperoni</label><br>
+                            <input type="checkbox" id="sausage" name="toppings" value="Sausage">
+                            <label for="sausage">Sausage</label><br>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="peppers" name="toppings" value="Peppers">
+                            <label for="peppers">Peppers</label><br>
+                            <input type="checkbox" id="onions" name="toppings" value="Onions">
+                            <label for="onions">Onions</label><br>
+                            <input type="checkbox" id="olives" name="toppings" value="Olives">
+                            <label for="olives">Olives</label><br>
+                            <input type="checkbox" id="mushrooms" name="toppings" value="Mushrooms">
+                            <label for="mushrooms">Mushrooms</label><br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Submit and Clear Buttons -->
+            <div class="button-section">
+                <input type="submit" value="Submit Order">
+                <input type="clear" value="Clear">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
